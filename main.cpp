@@ -23,7 +23,7 @@ public:
         }
 
         float dot (vector2 &other) const {
-                return v[0] * other.get_x() + v[1] * get_y();
+                return v[0] * other.get_x() + v[1] * other.get_y();
         }
 
         float get_length() const {
@@ -51,7 +51,7 @@ public:
                 return vector2 (v[0] - vec.get_x(), v[1] - vec.get_y());;
         }
         vector2 operator*(const float scalar) const {
-                return vector2 (v[0] * scalar * 1.0, v[1] + scalar * 1.0);
+                return vector2 (v[0] * scalar * 1.0, v[1] * scalar * 1.0);
         }
 
 
